@@ -1,0 +1,15 @@
+{
+  "branches": ["master"],
+  "verifyConditions": [
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github"
+  ],
+  "prepare": [
+    "@semantic-release/changelog",
+    "@semantic-release/git"
+  ],
+  "publish": ["@semantic-release/github"],
+  "success": false,
+  "fail": false
+}
